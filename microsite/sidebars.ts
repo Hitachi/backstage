@@ -179,6 +179,7 @@ export default {
                 'auth/google/provider',
                 'auth/google/gcp-iap-auth',
                 'auth/guest/provider',
+                'auth/keycloak/provider',
                 'auth/okta/provider',
                 'auth/oauth2-proxy/provider',
                 'auth/onelogin/provider',
@@ -435,6 +436,9 @@ export default {
         ]),
         sidebarElementWithIndex({ label: 'Google GCS' }, [
           'integrations/google-cloud-storage/locations',
+        ]),
+        sidebarElementWithIndex({ label: 'Keycloak' }, [
+          'integrations/keycloak/org',
         ]),
         sidebarElementWithIndex({ label: 'LDAP' }, ['integrations/ldap/org']),
         sidebarElementWithIndex({ label: 'Okta' }, ['integrations/okta/org']),
